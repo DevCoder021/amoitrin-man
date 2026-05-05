@@ -1,12 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  output: 'export',
+  output: 'export', // C'est cette ligne qui manque !
   images: {
-    unoptimized: true,
+    unoptimized: true, // Obligatoire pour l'affichage des images sur GitHub Pages
   },
-}
+};
 
 export default nextConfig;
-
-module.exports = nextConfig
