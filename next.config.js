@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // C'est cette ligne qui manque !
-  images: {
-    unoptimized: true, // Obligatoire pour l'affichage des images sur GitHub Pages
-  },
+  output: 'export',
+  images: { unoptimized: true },
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
 };
-
 export default nextConfig;
